@@ -4,16 +4,16 @@
 
 <SfChart>
     <ChartEvents OnAxisLabelRender="AxisLabelEvent"></ChartEvents>
-	
+
     <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category"></ChartPrimaryXAxis>
-	
+
     <ChartSeriesCollection>
         <ChartSeries DataSource="@Sales" XName="Month" YName="SalesValue" Type="ChartSeriesType.Column">
         </ChartSeries>
     </ChartSeriesCollection>
 </SfChart>
 
-@code{
+@code {
     public class SalesInfo
     {
         public string Month { get; set; }
@@ -36,12 +36,13 @@
         {
             args.LabelStyle.Color = "Red";
             if (args.Value == 4)
-             args.Text = "chart"; 
-            
-        } else if (args.Axis.Name == "PrimaryYAxis")
+                args.Text = "chart";
+
+        }
+        else if (args.Axis.Name == "PrimaryYAxis")
         {
             args.LabelStyle.Color = "Blue";
-        } 
-       
+        }
+
     }
 }
