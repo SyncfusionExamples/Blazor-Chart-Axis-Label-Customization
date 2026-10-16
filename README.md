@@ -47,9 +47,6 @@ dotnet run
 
 4. Open the local application URL displayed in the terminal output.
 
-## Project Structure
-
-- `Pages/` — page implementation containing the chart axis label customization sample.
 
 ## Support and Feedback
 
